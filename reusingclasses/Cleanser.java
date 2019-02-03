@@ -59,3 +59,24 @@ class Detergent extends Cleanser {
         Cleanser.main(args);
     }
 }
+
+class Soap extends Detergent {
+
+    public void scrub() {
+        append(" Soap.scrub()");
+    }
+
+    public void steralise() {
+        append(" steralise()");
+    }
+
+    public static void main(String[] args) {
+        Soap x = new Soap();
+        x.dilute();
+        x.apply();
+        x.scrub();
+        x.foam();
+        x.steralise();
+        System.out.println(x);
+    }
+}
