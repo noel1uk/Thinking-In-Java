@@ -1,4 +1,5 @@
 class Amphibian {
+
     protected void swim() {
         System.out.println("Amphibian swim");
     }
@@ -10,6 +11,11 @@ class Amphibian {
 }
 
 class Frog extends Amphibian {
+
+    @Override protected void swim() {
+        System.out.println("Frog swim");
+    }
+
     public static void main(String[] args) {
         Frog frog = new Frog();
         // call base class methods
